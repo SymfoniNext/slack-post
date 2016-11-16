@@ -13,5 +13,5 @@ $ curl -X PUT -d 'https://slack-hook.url' "http://$CONSUL/v1/kv/$APP_NAME/hook_u
 ```
 
 ```
-$ docker run --rm --net somewhere-with-consul symfoni/slack-post:latest $CONSUL $APP_NAME "hello from slack-post"
+$ docker run --rm --network somewhere-with-consul symfoni/slack-post:latest $CONSUL $APP_NAME "hello from slack-post"
 ```
