@@ -34,4 +34,4 @@ done
 # Send something to slack
 # More adventurous stuff [probably] coming later
 payload="{\"username\":\"${config['username']}\", \"icon_emoji\": \"${config['icon']}\",\"text\": \"$text\"}"
-curl -s -X POST --data-urlencode "payload=$payload" "${config['hook_url']}"
+curl -f -s -X POST --data-urlencode "payload=$payload" "${config['hook_url']}"
